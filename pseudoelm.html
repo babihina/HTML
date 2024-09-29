@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 1.6;
+    }
+    h1{
+        text-align: center;
+        color: #333;
+    }
+    h1::before{
+        content: "NOTES";
+        color: yellow;
+    }
+    h1::after{
+        content: "ENDED";
+        color: yellow;
+    }
+    p{
+        margin: 20px;
+        padding: 10px;
+        background: #f0f0f0;
+        border-left: 5px solid #007bff;
+    }
+    p::first-letter{
+        font-size: 2em;
+        color: red;
+    }
+    p::first-line{
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    ::selection{
+        background-color: gold;
+        color: black;
+    }
+</style>
+<body>
+    <h1>Welcome to Pseudo-Elemts</h1>
+    <p>Pseudo elements in CSS are like magic tricks for web designers. They let you style parts of an element without messing with the HTML code. Just add a double colon (::) and get creative!</p>
+</body>
+</html>
