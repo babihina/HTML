@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        .container{
+            background-color: rgb(147, 153, 153);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .item{
+            padding: 20px;
+            margin: 5px;
+            background-color: rgb(255, 182, 127);
+            color: rgb(72, 69, 69);
+        }
+        .block .item{
+            display: block;
+        }
+        .inline-block .item{
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+        }
+        .flex{
+            display:flex;
+            justify-content: space-around;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        .inline .item{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Display:Block</h2>
+    <div class="container block">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+    </div>
+
+    <h2>Display:Inline-block</h2>
+    <div class="container inline-block">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+    </div>
+
+    <h2>Display:Flex</h2>
+    <div class="container flex">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+    </div>
+
+    <h2>Display:Grid</h2>
+    <div class="container grid">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+    </div>
+
+    <h2>Display:Inline</h2>
+    <div class="container inline">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+    </div>   
+</body>
+</html>
