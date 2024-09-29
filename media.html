@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-width,initial scale=1.0">
+        <title>media demo</title>
+        </head>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: rgb(226, 226, 242);
+                padding: 20px;
+                color: rgb(21, 0, 60);
+}
+h1,h2{
+    color: rgb(20, 20, 19);
+    text-align: center;
+}
+.media-container{
+    max-width: 600px;
+    margin:0  auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rebeccapurple;
+    border-radius: 10px;
+
+}
+audio,video{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+audio::-webkit-media-controls-panel,
+video::-webkit-media-controls-panel{
+    background-color: white;
+    color:black;
+    border-radius: 0 0 8px;
+}
+video{
+    max-width: 100%;
+    height: auto;
+}
+.caption{
+    font-size:1rem;
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+}
+
+        </style>
+ <body>
+<h1>Html media element</h1>
+<div class="media-container">
+    <h2>Audio player</h2>
+    <audio controls>
+        <source src="sound.mp3" type="audio/mp3" />
+        </audio>
+        <div class="caption">listen to our latest audio</div>
+        </div>
+        <div class="media-container">
+            <h2>Video player</h2>
+            <video controls autoplay loop muted>
+            <source src="video1.mp4" type="video/mp4" />
+                </video>
+                <div class="caption">watch our featured video</div>
+        </div>
+        <div class="media-container">
+            <h2>Loop player</h2>
+            <video controls autoplay loop muted>
+                <source src="video2.mp4" type="video/mp4" />
+                </video>
+                <div class="caption">the video loop and plays automatically</div>
+        </div>
+ </body>
+ <html

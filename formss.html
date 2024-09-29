@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 18px;
+            background-color: rgb(49, 131, 199);
+        }
+        h1{
+            text-align: center;
+            box-shadow: 10px 10px 10px #bb2121;
+        }
+        form{
+            background-color: rgb(35, 219, 189);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #380a0a;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        label{
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, select, textarea{
+            width: 95%;
+            padding: 9px;
+            margin: 5px 0 20px;
+            border-radius: 5px;
+            border: 1px solid #885656;
+            font-size: 1rem;
+        }
+        button{
+            background-color: #4d3c53;
+            color: aliceblue;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #e4e709;
+        }
+        .radio, .checkbox {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+        .radio label, .checkbox label {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+        .radio input, .checkbox input{
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="https://httpbin.org/get" method="GET" target="_blank">
+        <!--Text Input-->
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required placeholder="John"/>
+
+        <!--Email Input-->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="john@exapmle.com"/>
+
+        <!--Password Input-->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="6" required/>
+
+        <!--Number Input-->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100" required/>
+
+        <!--URL Input-->
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website" placeholder="https://example.com"/>
+
+        <!--Date Input-->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required/>
+
+        <!--Phone Input-->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your Phone Number :" required/>
+
+        <!--Radio Buttons-->
+        <label>Gender:</label>
+        <div class="radio-group">
+            <label><input type="radio" id="male" name="gender" value="male"/>Male</label>
+            <label><input type="radio" id="female" name="gender" value="female"/>Female</label>
+            <label><input type="radio" id="other" name="gender" value="other"/>Other</label>
+        </div>
+
+        <!--Checkbox-->
+        <label>Languages Known:</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" id="english" name="language" value="english"/>English</label>
+            <label><input type="checkbox" id="german" name="language" value="german"/>German</label>
+            <label><input type="checkbox" id="spanish" name="language" value="spanish"/>Spanish</label>
+        </div>
+<!--Dropdown (Select) -->
+        <label for="bio">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">--Select your Country</option>
+            <option value="in">India</option>
+            <option value="ca">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="au">Australia</option>
+        </select>
+
+        <!--TextArea-->
+        <label for="bio">Brief Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us Something about Urself">
+        </textarea>
+
+        <!--submit and reset buttons-->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

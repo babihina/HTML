@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        nav{
+            background-color: rgb(25, 181, 129);
+            padding: 10px;
+            color: antiquewhite;
+        }
+        .navbar-item{
+            background-color: rgb(25, 181, 129);
+            color: antiquewhite;
+            padding: 20px;
+            margin: 0 10px;
+            padding: 5px 50px;
+        }
+        .navbar-flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+        .navbar-grid{
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            gap: 5px;
+            align-items: center;
+        }
+        .navbar-block{
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .navbar-inline a{
+            display: inline-block;
+            margin-right: 10px;
+            padding: 10px 20px;
+            background-color: rgb(25, 181, 129);;
+            color: antiquewhite;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Navbar using Flexbox</h2>
+    <nav class="navbar-flex">
+        <div class="navbar-item">Home</div>
+        <div class="navbar-item">About</div>
+        <div class="navbar-item">Contact</div>
+    </nav>
+
+    <h2>Navbar using Grid</h2>
+    <nav class="navbar-grid">
+        <div class="navbar-item">Home</div>
+        <div class="navbar-item">About</div>
+        <div class="navbar-item">Contact</div>
+    </nav>
+
+    <h2>Navbar using Block and Inline-block</h2>
+    <nav class="navbar-inline-block">
+        <div class="navbar-block">Home</div>
+        <div class="navbar-block">About</div>
+        <div class="navbar-block">Contact</div>
+    </nav>
+
+<h2>Navbar using Inline</h2>
+    <nav class="navbar-inline">
+        <a href="#">Home</div>
+        <a href="#">About</div>
+        <a href="#">Contact</div>
+    </nav>
+
+
+</body>
+</html>

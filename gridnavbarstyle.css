@@ -1,0 +1,35 @@
+.body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Two columns: one for the logo, one for the links */
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns for the links */
+    list-style: none;
+    justify-items: end; /* Align links to the right side */
+    gap: 20px; /* Space between the links */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    background-color: grey;
+}
