@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+        background-color: beige;
+    }
+    .header,.footer{
+        background-color: aquamarine;
+        color: antiquewhite;
+        text-align: center;
+        padding: 20px;
+    }
+    .container{
+        position: relative;
+        padding: 20px;
+        background-color: azure;
+        border: 1px solid;
+        margin: 20px auto;
+        width: 80%;
+        height: 500px;
+    }
+    .about{
+        margin-bottom: 30px;
+        background-color: antiquewhite;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    .about-image{
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    .relative{
+        position: relative;
+        top: 10px;
+        background-color: brown;
+        color: antiquewhite;
+        padding: 10px;
+        text-align: center;
+ }
+ .absolute{
+    position: relative;
+    top: 10px;
+    margin-bottom: 10px;
+    background-color: #333;
+    color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+ }
+ .contact-image{
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+ }
+</style>
+<body>
+    <header class="header">Fic</header>
+    <main class="container">
+        <section class="about">
+            <h2>About Us</h2>
+            <p>This section sets the stage for your story, giving readers a taste of what to expect and enticing them to dive into your fanfic world</p>
+            <img src="abt.png" alt="About Us Image" class="about-image">
+        </section>
+
+        <section class="absolute">
+            <img src="cntct.png" alt="Contact Us Image" class="contact-image">
+            <h3>Contact Us</h3>
+            <p> Feel free to explore how characters interact with messages or inquiries from fans or even other fictional characters. </p>
+        </section>
+        <section class="relative">Meet Our Team</section>
+    </main>
+    <footer class="footer">@2024 Fictional Company Name.All rights reserved</footer>
+</body>
+</html>

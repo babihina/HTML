@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        position: relative;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        width: 200px;
+        height: 100px;
+        margin: 20px 0;
+        color: rgb(28, 26, 23);
+        text-align: center;
+        line-height: 100px;
+ }
+ .static{
+background-color: aquamarine;
+ }
+ .relative{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    background-color: brown;
+ }
+ .absolute{
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    background-color: aqua;
+ }
+ .fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: blueviolet;
+ }
+ .sticky{
+position: sticky;
+top: 0;
+background-color: blue;
+width: 200px;
+margin: 20px 0;
+ }
+</style>
+<body>
+    <div class="container">
+        <div class="box static">Static Box</div>
+        <div class="box relative">Relative Box</div>
+        <div class="box absolute">Absolute Box</div>
+        <div class="box fixed">Fixed Box</div>
+<div style="height: 1000px;">Rem units are relative to the root font size in web design, making them ideal for creating scalable and responsive layouts across different screen sizes.
+            <div class="box sticky">Sticky Box</div>
+        </div>
+    </div>
+</body>
+</html>
